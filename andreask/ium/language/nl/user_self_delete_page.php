@@ -5,7 +5,7 @@
 * IUM (Inactive User Manager).
 *
 * @copyright (c) 2016 by Andreas Kourtidis
-* Nederlandse vertaling @ Solidjeuh <https://www.froddelpower.be>
+* Nederlandse vertaling @ Solidjeuh <https://www.muziekpromo.net>
 * @license   GNU General Public License, version 2 (GPL-2.0)
 *
 * For full copyright and license information, please see
@@ -23,7 +23,7 @@ if ( empty($lang) || !is_array($lang) )
 }
 
 $lang = array_merge($lang, array(
-	'USER_SELF_DELETE_TITLE'		=>  'Zelf verwijderings pagina.',
+	'USER_SELF_DELETE_TITLE'		=>  'zelf verwijdering pagina.',
 	'USER_SELF_DELETE_EXPLAIN'		=>  'Door het aanvinken van de verificatie box en het klikken op de confirmatie knop ga je akkoord om je account te verwijderen van dit forum.<br/>Al je posten zullen blijven staan, maar je zal niet meer kunnen inloggen met je gebruikersnaam en paswoord.<br/>Indien je opnieuw een account aanmaakt met dezelfde gebruikersnaam zullen je posten niet op je nieuwe account komen te staan.',
 	'USER_SELF_DELETE_VERIFY'		=>  'Ik begrijp de gevolgen en ik verifieer',
 	'HAVE_TO_LOGIN'					=>  'het spijt ons, maar je moet inloggen om deze pagina te bekijken.',

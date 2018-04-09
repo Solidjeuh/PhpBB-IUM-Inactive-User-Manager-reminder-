@@ -5,7 +5,7 @@
 * IUM (Inactive User Manager).
 *
 * @copyright (c) 2016 by Andreas Kourtidis
-* Nederlandse vertaling @ Solidjeuh <http://www.froddelpower.be>
+* Nederlandse vertaling @ Solidjeuh <https://www.muziekpromo.net>
 * @license   GNU General Public License, version 2 (GPL-2.0)
 *
 * For full copyright and license information, please see
@@ -46,6 +46,7 @@ $lang = array_merge(
 	'ANDREASK_IUM_TEST_EMAIL'				=>	'Zend test e-mail',
 	'ANDREASK_IUM_INCLUDED_FORUMS'			=>	'inbegrepen forums',
 	'ANDREASK_IUM_EXCLUDE_FORUM'			=>	'Uitsluiten',
+	'ANDREASK_IUM_GROUP_IGNORE'				=>	'Negeer groepen',
 
 	'ANDREASK_IUM_EXCLUDED_FORUMS'			=>	'Uitgesloten forums',
 	'ANDREASK_IUM_INCLUDE_FORUM'			=>	'Inbegrepen',
@@ -90,7 +91,8 @@ $lang = array_merge(
 	'SEND_INACTIVE'					=>	'Zend Inactieve template',
 	'PLUS_SUBFORUMS'				=>	'+Subforums',
 	// Sort by, options for the inactive users list
-	'ACP_IUM_INACTIVE'	=> array(	0	=>	'Actieve',
+	'ACP_IUM_INACTIVE'	=> array(	
+                                    0	=>	'Actieve',
 									1	=>	'Registratie pre-activatie',
 									2	=>	'Profiel veranderd',
 									3	=>	'Beheerder gedeactiveerd',
@@ -108,6 +110,13 @@ $lang = array_merge(
 	'NO_REMINDER_SENT_YET'	=>	'Nog geen herinneringen verzonden',
 	'IUM_INACTIVE_REASON'	=>	'Status',
 	// Delete approval page
+
+	'IGNORE_METHODE'	=> array(
+		0 =>	'Niet genegeerd',
+		1 =>	'Auto',
+		2	=>	'Genegeer door Beheerder',
+	),
+	'IGNORE_METHODES'	=>	'Negeer type',
 	'ACP_IUM_APPROVAL_LIST_TITLE'	=> 'Verwijdering goedkeuring lijst',
 	'APPROVAL_LIST_PAGE_TITLE'	=> 'Verwijdering goedkeuring lijst',
 	'IUM_APPROVAL_LIST_EXPLAIN'	=> 'Goedkeuring lijst van gebruikers die een aanvraag hebben ingediend om hun account te verwijderen',
@@ -129,6 +138,11 @@ $lang = array_merge(
 	'GLOBAL_MODERATORS'		=>	'Globale Moderators',
 	'BOTS'					=>	'Bots',
 	'NEWLY_REGISTERED'		=>	'Nieuw geregistreerde leden',
+	'USER_SELECT'		=>	'Selecteer',
+	'SELECT_AN_ACTION'		=>	'Selecteer een Actie',
+	'DONT_IGNORE'		=>	'Niet negeren',
+	'NOT_IGNORED'		=>	'Gebruiker(s) niet meer genegeerd.',
+	'RESET_REMINDERS'		=>	'Reset was succesvol.',
 	// Sort Lists
 	'COUNT_BACK'	=>	'<strong>VAN</strong> dagen/maanden/jaren tussentijd en omgekeerd',
 	'ACP_DESCENDING'	=>	'Aflopende volgorde',
