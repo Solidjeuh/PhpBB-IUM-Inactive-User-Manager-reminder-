@@ -5,7 +5,6 @@
 * IUM (Inactive User Manager).
 *
 * @copyright (c) 2016 by Andreas Kourtidis
-* Nederlandse vertaling @ Solidjeuh <https://www.muziekpromo.net>
 * @license   GNU General Public License, version 2 (GPL-2.0)
 *
 * For full copyright and license information, please see
@@ -30,7 +29,7 @@ $lang = array_merge(
 	'ACP_IUM_TITLE'	=>	'IUM extensie',
 	'ACP_IUM_TITLE2'	=> 'Inactieve Gebruikers Lijst',
 	'ACP_IUM_APPROVAL_LIST'	=> 'Goedkeuringslijst negeren/verwijderen',
-	// ACP configuration page
+	// ACP configuratiepagina
 	'ANDREASK_IUM_ENABLE'	=>	'Geavanceerde niet actieve gebruiker herinnering inschakelen ',
 	'ANDREASK_IUM_INTERVAL'	=>	'Interval ',
 	'ANDREASK_IUM_EMAIL_LIMIT'	=>	'Beperk e-mails ',
@@ -56,10 +55,10 @@ $lang = array_merge(
 	'IUM_IGNORE_GROUP_MANAGMENT'				=>	'Groep management',
 	'ANDREASK_IUM_UPDATE_IGNORE_LIST'			=>	'Negeer',
 
-	// acp user overview add option
+	// ACP gebruikersoverzicht optie toevoegen
 	'USER_ADMIN_ANDREASK_IUM_USERS_OVERVIEW_OPTION'	=>	'Stuur herinnering',
 
-	// ACP configuration page Explanations
+	// ACP configuratiepagina Uitleg
 	'ANDREASK_IUM_ENABLE_EXPLAIN'	=>	'Indien ingeschakeld, start de extensie met het zenden van herinneringen naar "slapers".',
 	'ANDREASK_IUM_INTERVAL_EXPLAIN'	=>	'Dit is de interval van dagen om terug te tellen om een gebruiker als een "slaper" te beschouwen. Aanbevolen is 30 dagen',
 	'ANDREASK_IUM_EMAIL_LIMIT_EXPLAIN'	=>	'Aantal herinneringen die <b>per dag</b> kunnen worden verzonden. Aanbevolen is ~250. Maar neem contact op met uw provider voor de limiet van e-mails per dag',
@@ -70,7 +69,7 @@ $lang = array_merge(
 	'ANDREASK_IUM_SELF_DELETE_EXPLAIN'	=>	'Indien ingeschakeld, wordt een link naar een pagina "<strong>board_url/ium/{random_key}</strong>" toegevoegd aan de gebruiker en kunnen ze zelf hun account verwijderen..',
 	'ANDREASK_IUM_DELETE_APPROVE_EXPLAIN'	=>	'Indien ingeschakeld, moet elk verzoek om zelf te verwijderen worden goedgekeurd door de beheerder.',
 	'ANDREASK_IUM_KEEP_POSTS_EXPLAIN'	=>	'"Ja" zal de gebruiker verwijderen maar zal <strong>de berichten</strong> behouden, "Nee" zal ook de berichten van de gebruiker verwijderen.',
-	'ANDREASK_IUM_IGNORE_LIST_EXPLAIN'	=>	'Hier kunt u de gebruikers beheren die u wilt negeren (geen herinnering verzenden) of ze uit de negeer lijst verwijderen.<br/><strong>Elke gebruiker in een nieuwe regel.</strong><br/>Let op, de volgende groepen worden <strong>standaard genegeerd</strong> : 1. GASTEN, 4. GLOBALE_MODERATORS, 5. BEHEERDER en 6. BOTS',
+	'ANDREASK_IUM_IGNORE_LIST_EXPLAIN'	=>	'Hier kunt u de gebruikers beheren die u wilt negeren (geen herinnering verzenden) of ze uit de negeer lijst verwijderen.<br><strong>Elke gebruiker in een nieuwe regel.</strong><br>Let op, de volgende groepen worden <strong>standaard genegeerd</strong> : 1. GASTEN, 4. GLOBALE_MODERATORS, 5. BEHEERDER en 6. BOTS',
 	'ANDREASK_IUM_AUTO_DEL_EXPLAIN'			=>	'Gebruikers worden na een bepaald aantal dagen automatisch verwijderd als ze na de 3 herinneringen niet inloggen.',
 	'ANDREASK_IUM_AUTO_DEL_DAYS_EXPLAIN'	=>	'Aantal dagen wachten tot een gebruiker automatisch wordt verwijderd na de gevraagde dag.',
 	'ANDREASK_IUM_TEST_EMAIL_EXPLAIN'		=>	'Er wordt een test mail verzonden naar "%s"',
@@ -79,28 +78,29 @@ $lang = array_merge(
 	'ANDREASK_IUM_IGNORE_GROUP_LIST_EXPLAIN'	=>	'Hier kun je selecteren welke groepen moeten worden genegeerd door de extensie. Hoewel ze <u>hier niet</u> geselecteerd zijn zullen </> BOTS, BEHEERDERS, MODERATOROS en GASTEN <b>genegeerd</ b> worden. Maar het is nog steeds aan te raden om hier ook de groepen te selecteren!',
 	'ANDREASK_IUM_GROUP_IGNORE_EXPLAIN'		=>	'Houd de control (CTRL) (of &#8984; voor mac) op het toetsenbord ingedrukt om meerdere groepen te selecteren.',
 
-	// configuration page Legend
+	// configuratiepagina Legenda
 	'IUM_INACTIVE_USERS_EXPLAIN'	=>	'In deze lijst kunt u de gebruikers zien die zich hebben geregistreerd, maar waarvan de accounts inactief zijn en degenen die het forum gedurende de ingestelde tijd hier niet hebben bezocht.<br>Gebruikers naam kleuren vertegenwoordigen de negeer status. <span style="color: #DC143C;"><strong>Rood</strong></span> -> Genegeerd door een beheerder, <span style="color: #008000;"><strong>Groen</strong></span> -> Auto genegeerd, <span style="color: #000000;"><strong>Zwart</strong></span> -> Niet genegeerd.',
 	'ACP_IUM_SETTINGS'	=>	'Inactieve gebruikers herinnering instellingen',
 	'ACP_IUM_MAIL_SETTINGS'	=>	'Herinnering instellingen',
 	'ACP_IUM_MAIL_INCLUDE_SETTINGS'	=>	'Herinnering "Inclusief" instellingen',
 	'ACP_IUM_DANGER'	=>	'Gevarenzone',
-	// configuration page
+	// configuratiepagina
 	'INACTIVE_MAIL_SENT_TO'			=>	'Een voorbeeld van e-mail voor inactieve gebruikers is verzonden naar "%s"',
 	'SLEEPER_MAIL_SENT_TO'			=>	'Een voorbeeld van e-mail voor slapende gebruikers is verzonden naar "%s"',
 	'SEND_SLEEPER'					=>	'Zend slaper sjabloon',
 	'SEND_INACTIVE'					=>	'Zend inactief sjabloon',
 	'PLUS_SUBFORUMS'				=>	'+Subforums',
-	// Sort by, options for the inactive users list
+	// Sorteren op, opties voor de lijst met inactieve gebruikers
 	'ACP_IUM_INACTIVE'	=> array(
 									0	=>	'Actief',
+									// Rest van redenen zijn niet actief omdat ze worden gecontroleerd via constants.php
 									1	=>	'Registratie pre-activatie',
 									2	=>	'Profiel wijzigen',
 									3	=>	'Beheerder gedeactiveerd',
 									4	=>	'Permanent verbannen',
 									5	=>	'Tijdelijk verbannen'),
 	'NEVER_CONNECTED'	=>	'Gebruiker nooit ingelogd',
-	// Inactive users list page
+	// Inactieve gebruikerslijstpagina
 	'ACP_IUM_NODATE'	=>	'Gebruiker is <strong>niet</strong> uitgeschakeld',
 	'ACP_USERS_WITH_POSTS'	=>	'Toon alleen gebruikers met berichten',
 	'LAST_SENT_REMINDER'	=>	'Vorige herinnering',
@@ -111,7 +111,7 @@ $lang = array_merge(
 	'NO_REMINDER_SENT_YET'	=>	'Nog geen herinneringen verzonden',
 	'IUM_INACTIVE_REASON'	=>	'Status',
 	'TOTAL_USERS_WITH_DAY_AMOUNT'	=>	'<strong>%1$s</strong> Gebruiker(s) in totaal <i>voor het ingestelde interval</i> van "<strong>%2$s</strong>"',
-	// Delete approval page
+	// De goedkeuringspagina verwijderen
 	'IGNORE_METHODE'	=> array(
 		0 =>	'Niet genegeerd',
 		1 =>	'Auto',
@@ -123,6 +123,7 @@ $lang = array_merge(
 	'IUM_APPROVAL_LIST_EXPLAIN'	=> 'Goedkeuringslijst van gebruikers met een verzoek om hun account te verwijderen',
 	'NO_REQUESTS'			=> 'Nog geen aanvragen',
 	'NO_USER_SELECTED'		=>	'Geen gebruiker geselecteerd.',
+	'SELECT_ACTION'			=>	'Gelieve een actie te selecteren',
 	'IUM_MANAGMENT'			=>	'Inactief gebruikers beheer',
 	'IGNORE_USER_LIST'		=>	'Gebruikers toevoegen aan de negeer lijst',
 	'IGNORED_USERS_LIST'	=>	'Lijst met gebruikers die worden genegeerd',
